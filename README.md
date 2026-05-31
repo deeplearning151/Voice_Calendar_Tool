@@ -5,6 +5,7 @@
 项目目标是让用户用更自然的方式管理日程：可以输入或说出“明天下午三点提醒我开组会”“6月4号9点提醒我上课”等中文指令，系统会自动解析时间和事件标题，并在日历界面中展示。
 <img width="1494" height="926" alt="image" src="https://github.com/user-attachments/assets/acd1275a-6446-48d8-b9be-05bd7385aff5" />
 
+演示视频链接：https://www.bilibili.com/video/BV1fHVn6dEtb/?spm_id_from=333.1387.upload.video_card.click&vd_source=d221f9bd167a0dc8486fba6449e8fc6d
 ## 功能亮点
 
 - 中文自然语言日程解析
