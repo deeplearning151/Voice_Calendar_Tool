@@ -6,6 +6,71 @@
 <img width="1494" height="926" alt="image" src="https://github.com/user-attachments/assets/acd1275a-6446-48d8-b9be-05bd7385aff5" />
 
 演示视频链接：https://www.bilibili.com/video/BV1fHVn6dEtb/?spm_id_from=333.1387.upload.video_card.click&vd_source=d221f9bd167a0dc8486fba6449e8fc6d
+
+## Prompt
+
+你现在是我的 Python 项目开发助手，请基于现有项目继续开发和优化。
+
+项目名称：Voice Calendar Tool
+项目类型：Python 桌面端语音日历工具
+项目路径：
+
+项目简介：
+这是一个基于 Python 的语音日历工具，支持中文自然语言指令、SQLite 本地日程存储、Tkinter 图形界面、语音输入、语音播报和到点提醒。用户可以通过文字或语音输入“明天下午三点提醒我开组会”“6月4号9点提醒我上课”等指令，系统会自动解析日期、时间和事件标题，并在日历视图中展示。
+
+技术栈：
+- Python
+- Tkinter
+- SQLite
+- speech_recognition
+- PyAudio
+- pyttsx3
+- unittest
+
+当前项目结构：
+- main.py：程序入口
+- src/ui/main_window.py：主界面
+- src/services/command_parser.py：中文自然语言指令解析
+- src/services/calendar_service.py：日程业务逻辑
+- src/services/reminder_service.py：日程提醒线程
+- src/services/speech_service.py：语音识别
+- src/services/tts_service.py：语音播报
+- src/database/db.py：数据库初始化和迁移
+- src/database/event_repository.py：数据库增删查
+- src/models/event.py：日程模型
+- tests/：单元测试
+- run_tests.py：一键测试脚本
+
+实现功能：
+1. 中文自然语言添加、查询、删除日程；
+2. 支持今天、明天、后天、下周、具体日期、上午/下午/晚上等时间表达；
+3. SQLite 本地存储；
+4. Tkinter 三栏式 GUI；
+5. 左侧全部提醒列表；
+6. 中间单日和最多 7 天日程时间轴视图；
+7. 右侧小日历范围选择；
+8. 语音输入；
+9. 本地语音播报；
+10. 到点提醒弹窗、状态栏提示和语音提醒；
+11. 点击日程卡片查看详情和删除；
+12. 单元测试和一键测试脚本。
+
+开发要求：
+- 不要破坏已有功能；
+- 不要删除本地数据库；
+- 不要提交 .venv、.idea、__pycache__、data/*.db；
+- 优先保证功能稳定，而不是过度设计；
+- 保持代码结构清晰，遵循现有分层；
+- 修改后必须运行测试：
+  python run_tests.py
+
+请在修改前先阅读相关代码，明确要改哪些文件。修改后请说明：
+1. 修改了哪些文件；
+2. 每个文件改了什么；
+3. 如何运行项目；
+4. 如何测试；
+5. 当前功能还有哪些限制。
+
 ## 功能亮点
 
 - 中文自然语言日程解析
